@@ -1,0 +1,66 @@
+.teacher-dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+  }
+  
+  .dashboard-subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+  .course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  .course-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table-header {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .table-cell {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left; 
+  }
+
+  
+  
+
+  .generate-button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .generate-button:hover {
+    background-color: #0056b3;
+  }
+  

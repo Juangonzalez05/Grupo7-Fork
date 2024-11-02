@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Estudiantes y Calificaciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reporte de Estudiantes y Calificaciones</h1>
+    <h2>Curso: {{ course.name }}</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Estudiante</th>
+                <th>Calificación</th>
+                <th>Fecha de Evaluación</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for grade in estudiantes_con_notas %}
+                <tr>
+                    <td>{{ grade.student.user.get_full_name }}</td>
+                    <td>{{ grade.grade }}</td>
+                    <td>{{ grade.evaluation_date }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
